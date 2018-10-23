@@ -1,0 +1,152 @@
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+	margin-top:100px;
+	margin-bottom: 40px;
+  
+  /* Location of the image */
+	background-image: url(../img/body_bg.gif); 
+  
+	  /* Background image is centered vertically and horizontally at all times */
+	  background-position: center center;
+	  
+	  /* Background image doesn't tile */
+	  background-repeat: repeat;
+	  
+	  /* Background image is fixed in the viewport so that it doesn't move when 
+		 the content's height is greater than the image's height */
+	  background-attachment: fixed;
+	  
+	  /* This is what makes the background image rescale based
+		 on the container's size */
+	  /*background-size: cover;
+	  
+	  /* Set a background color that will be displayed
+		 while the background image is loading */
+	  background-color: #fff;
+  
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 40px;
+  /*background-color: #f5f5f5;*/
+  background-color:#000;
+  color:#fff;
+}
+
+
+/* Custom page CSS
+-------------------------------------------------- */
+/* Not required for template or sticky footer method. */
+
+.vertical-center{
+	min-height: 95%;  /* Fallback for browsers do NOT support vh unit */
+	min-height: 95vh; /* These two lines are counted as one :-)       */
+	 display: -webkit-flex; /* Safari */
+    -webkit-align-items: center; /* Safari 7.0+ */
+	display: flex;
+	align-items: center;
+	max-width:400px;
+}
+
+.container .text-muted {
+  margin: 10px 0;
+}
+
+.footer > .container {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+code {
+  font-size: 80%;
+}
+
+/* navbar */
+
+.navbar{
+	 
+  min-height: 80px;
+  border: 1px solid transparent;
+  border-radius:0;
+}
+.navbar-title{
+  float: left;
+  max-width:300px;
+  border:0px solid #fff;
+  margin-top:10px;
+  margin-left:10px;
+}
+
+.nama-toko:hover,
+.nama-toko:focus {
+  text-decoration: none;
+  color:#fff;
+}
+
+.nama-toko{
+   display:block;
+   color:#fff;
+   font-size: 18px;
+  line-height: 20px;
+}
+p.alamat-toko{
+   display:block;
+   color:#fff;
+   font-size:0.8em;
+   border:0px solid #fff;
+   margin-bottom:0;
+}
+
+.navbar-nav{
+	border:0px solid #fff;
+	margin-top:10px;
+
+}
+
+/* memberikan margin lebih besar karena navbar juga membesar */
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  body {margin-top:150px;}
+}
+/* image */
+.img-responsive {
+    display: block;
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+}
+.container-fluid{font-size:0.85em;}
+
+/* tabel */
+
+/*#tblPembelian tr td{padding:5px;color:#000;}*/
+#tblPembelian tr : hover{background:#BBDFF0}
+#tblPembelian tr:last-child{background:#2F71AA;color:#fff;}
+th{text-align:center;background:navy;color:#fff;}
+
+
+/* panel */
+
+.panel label {font-size:0.9em;}
+
+
+/* other */
+.pad-right-zero{padding-right:0;}
+.no-border{border:0px;}
+
+/* responsive table */
+@-moz-document url-prefix() {
+  fieldset { display: table-cell; }
+}
+
+/* laporan-laporan */
+#namaToko, #judulLaporan{font-size:1.4em;}
+

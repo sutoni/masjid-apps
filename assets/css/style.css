@@ -1,0 +1,148 @@
+/* Footer
+------------------------------------------------------------------- */
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin-bottom: 10px; /* Space untuk #footer */
+}
+
+#footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #f5f5f5;
+    font-size: 0.8em;
+    height: 50px; /* Tinggi footer */
+}
+
+.text-muted {
+    margin: 5px 0;
+}
+
+#footer strong {
+    color: #ff0000;
+}
+
+/* Header
+------------------------------------------------------------------- */
+#header{
+    height:100px;
+}
+
+#header h1{
+    display:none;
+}
+
+#header address {
+    text-align: right;
+    padding-top: 10px;
+    font-size: 0.9em;
+}
+
+#header address strong {
+    font-size: 1.5em;
+}
+
+/* Tabel data
+------------------------------------------------------------------- */
+/* Status "BELUM", bukan link */
+.status-danger, .status-biasa {
+    font-weight: bold;
+}
+
+td.status-danger {
+    color: #ff0000;
+}
+
+/* Status "BELUM", link */
+td.status-danger a:link, td.status-danger a:visited{
+    color: #ff0000;
+}
+
+/* Status "SUDAH",link */
+td.status-biasa a:link, td.status-biasa a:visited{
+    color: #000000;
+}
+
+
+/* Halaman Informasi > Prosedur
+------------------------------------------------------------------- */
+/* Spasi antara item list */
+ol li {
+    margin: 0 0 10px 0;
+}
+
+/* Tanda bitang (*) untuk PS */
+.ps {
+    color: #ff0000;
+    font-size: 1.2em;
+}
+
+/* Pagination
+------------------------------------------------------------------- */
+.pagination {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+/* Jarak spasi pagination dan form cari ke tabel data */
+.navigasi_cari {
+    padding-bottom: 15px;
+}
+
+/* Halaman preview biodata
+------------------------------------------------------------------- */
+.bio-preview dt {
+    min-width: 300px;
+    text-align: left;
+}
+
+.bio-preview dl {
+    margin: 5px 0;
+}
+
+.bio-preview h3 {
+    margin-top: 30px;
+}
+
+/* Daftar Sukses
+------------------------------------------------------------------- */
+#daftar-sukses strong {
+    font-family: monaco, consolas, courier new, courier, monospace;
+}
+
+#daftar-sukses div.row {
+    font-size: 1.5em;
+}
+
+/* Halaman admin > pengumuman list
+------------------------------------------------------------------- */
+#btn-tambah-pengumuman {
+    float: right;
+}
+
+/* Form
+------------------------------------------------------------------- */
+/*              xs       sm     md      lg
+Column width	Auto	~62px	~81px	~97px
+*/
+
+/* Agar pada screen ukuran medium (col-md-*) form tidak terlalu panjang */
+/* Selain form biodata dan form login peserta */
+form.myform {
+    max-width: 800px; /* col-md-5 */
+}
+
+/* Form Pengumuman */
+form.form-pengumuman {
+    max-width: 648px; /* col-md-8 */
+}
+
+/* Agar captcha tidak dempet atas-bawah*/
+.captcha {
+    margin: 10px 0;
+}
+
